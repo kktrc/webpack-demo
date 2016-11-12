@@ -4,9 +4,10 @@ var ReactDOM = require('react-dom');
 var ChatSend = require('./components/chat');
 var Timer = require('./components/timer');
 var TodoApp = require('./components/TodoItem');
+var AjaxDemo = require('./components/ajax');
 
 var img1 = document.createElement("img");
-img1.src = require('./small.png');
+img1.src = require('./imgs/small.png');
 document.body.appendChild(img1);
 
 var Avator = React.createClass({
@@ -48,9 +49,7 @@ var Avator = React.createClass({
 
         <button onClick={this.handleClick}>send</button>
 
-        <ChatSend />
-        <Timer />
-        <TodoApp />
+        <AjaxDemo />
       </div>
     );
   }
