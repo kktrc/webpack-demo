@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var ChatSend = require('./components/chat');
 var img1 = document.createElement("img");
 img1.src = require('./small.png');
 document.body.appendChild(img1);
@@ -23,6 +24,16 @@ var Avator = React.createClass({
     })
   },
 
+  componentDidMount: function() {
+
+    alert("HaHa componentDidMount");
+  },
+
+  componentWillMount: function() {
+
+    alert("HaHa componentWillMount");
+  },
+
   render: function(){
 
 
@@ -33,6 +44,8 @@ var Avator = React.createClass({
         <h2>{this.state.number}</h2>
 
         <button onClick={this.handleClick}>send</button>
+
+        <ChatSend />
       </div>
     );
   }

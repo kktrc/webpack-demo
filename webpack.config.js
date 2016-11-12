@@ -1,6 +1,7 @@
 module.exports = {
   entry: {
-    './build/build':'./src/index.js'
+    './build/build':'./src/index.js',
+    './build/main':'./src/main.js'
   },
   output: {
     filename: '[name].js'
