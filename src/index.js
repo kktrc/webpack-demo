@@ -2,6 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var ChatSend = require('./components/chat');
+var Timer = require('./components/timer');
+
 var img1 = document.createElement("img");
 img1.src = require('./small.png');
 document.body.appendChild(img1);
@@ -46,6 +48,7 @@ var Avator = React.createClass({
         <button onClick={this.handleClick}>send</button>
 
         <ChatSend />
+        <Timer />
       </div>
     );
   }
