@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import axios from 'axios';
+import Loading from 'react-loading';
 
 class AjaxDemo extends React.Component {
 
@@ -27,8 +28,8 @@ class AjaxDemo extends React.Component {
   render() {
 
     return (
-
       <div>
+        <Loading tyle='balls' color='#e3e3e3' />
         <textarea value={this.state.text}></textarea>
         <button onClick={this.handleClick.bind(this)}>ajax send</button>
       </div>
