@@ -3,6 +3,7 @@ var ReactDOM = require('react-dom');
 
 var ChatSend = require('./components/chat');
 var Timer = require('./components/timer');
+var TodoApp = require('./components/TodoItem');
 
 var img1 = document.createElement("img");
 img1.src = require('./small.png');
@@ -49,6 +50,7 @@ var Avator = React.createClass({
 
         <ChatSend />
         <Timer />
+        <TodoApp />
       </div>
     );
   }
