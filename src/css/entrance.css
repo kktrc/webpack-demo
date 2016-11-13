@@ -1,0 +1,23 @@
+.topBar {
+  width: auto;
+  height: 50px;
+  background-color: red;
+}
+
+.bottomBar {
+  width: auto;
+  height: 50px;
+  background-color: green;
+}
+
+.middle {
+  width: auto;
+  height: 500px;
+  background-color: black;
+}
+
+.container {
+  width: 400px;
+  height: 900px;
+  background-color: white;
+}

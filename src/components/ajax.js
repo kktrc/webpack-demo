@@ -25,6 +25,12 @@ class AjaxDemo extends React.Component {
     alert('HaHa --');
   }
 
+  handleChange() {
+
+    alert('Haha ');
+
+  }
+
   render() {
 
     return (
